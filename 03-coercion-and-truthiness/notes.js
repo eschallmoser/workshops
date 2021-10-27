@@ -49,5 +49,43 @@
 // console.log("1" == true); //returns true (string is truthy), but also
 // JS coerced true to be 1
 
-let newBool = Boolean("i am a string");
-console.log(newBool);
+// let newBool = Boolean("i am a string");
+// console.log(newBool); //returns true, but why?
+
+// TRUTHY AND FALSEY
+
+// whenever something is passed into a Boolean, JS has some rules
+// to determine whether that coercion is true or false
+
+// EXAMPLES OF TRUTHY VALUES
+// console.log(typeof Boolean("normal string")); //returns Boolean
+// console.log(Boolean("normal string")); //returns true
+// console.log(Boolean(10)); //returns true
+
+// EXAMPLES OF FALSEY VALUES
+// console.log(Boolean(""));
+// console.log(Boolean(0)); //every other number is truthy
+// console.log(Boolean(null));
+// console.log(Boolean(undefined));
+// console.log(Boolean(NaN));
+
+// if (0) {
+//     console.log("is truthy");
+// } else {
+//     console.log("is falsey")
+// }
+
+// put an exclamation mark in front of value to change its Boolean value
+
+// console.log(!0); //returns truthy
+// console.log(!"string"); //returns falsey
+// console.log(!""); //returns truthy
+
+// double exclamation gives you the truthiness of something, shortcut version
+// of doing Boolean()
+
+//------------------------------------------------------------------------
+
+// Logical Operators
+// && --AND--checks that both values are true, can also do more than 2 values
+//  || --OR--checks that one of the values are true
