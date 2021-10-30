@@ -1,23 +1,21 @@
 // Test One Restrictions: Do not declare any new variable with the let keyword
-let testOneMessage = "test failing";
+let testOneMessage = "test succeeding";
 
 function testOne() {
-  let testOneMessage = "test succeeding";
   return testOneMessage;
 }
 
 // Test Two Restrictions: Do not change any code in the body of testTwo
 // (you can edit helperFunc though)
-let testTwoMessage = "test succeeding";
+let testTwoMessage = "test failing";
 
 function testTwo() {
   helperFunc();
   return testTwoMessage;
 }
 
-function helperFunc(a) {
-  a = "test succeeding";
-  return a;
+function helperFunc() {
+  testTwoMessage = "test succeeding";
 }
 
 // Test Three Restrictions: Type only a single character in either testThree or getMessage
@@ -32,7 +30,7 @@ function testThree(testThreeMessage) {
   return msg;
 
   function getMessage(value) {
-    if (value) {
+    if (!value) {
       return testThreeMessage;
     }
 
@@ -48,7 +46,7 @@ function testFour(msg) {
     msg = msg;
 
     function doubleInner(msg) {
-      testFourMessage = msg;
+      testFourMessag = msg;
       return testFourMessage;
     }
 
