@@ -171,16 +171,16 @@
 
 //--you can also add objects within objects, like so:
 
-let pusheen = {
-  name: "Pusheen",
-  age: 7,
-  color: ["gray", "tabby"], //like so
-  sound: "meow",
-  siblings: {
-    sister: "Stormy",
-    brother: "Pip",
-  },
-};
+// let pusheen = {
+//   name: "Pusheen",
+//   age: 7,
+//   color: ["gray", "tabby"], //like so
+//   sound: "meow",
+//   siblings: {
+//     sister: "Stormy",
+//     brother: "Pip",
+//   },
+// };
 
 //to access Pusheen's sister, you can use multiple dot notation
-console.log(pusheen.siblings.sister);
+// console.log(pusheen.siblings.sister);
