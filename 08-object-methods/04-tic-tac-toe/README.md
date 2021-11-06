@@ -6,7 +6,7 @@ Follow the test specs to create a 'board' property, 'move' method, and a 'clear'
 method so you can play a game with your partner.
 
 The 'board' property is a grid of arrays that represents the board, where each
-cell is initiall null.
+cell is initially null.
 
 The 'move' method is a method that, given a character, rowNum, and colNum, adds
 the character to the correct cell in the board.
