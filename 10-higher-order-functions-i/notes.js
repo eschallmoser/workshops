@@ -259,13 +259,13 @@
 //.forEach passes the current index of the element as the second argument,
 //if you wanted to do something with indexes
 
-let bridges = ["Brooklyn", "Golden Gate", "London"];
+// let bridges = ["Brooklyn", "Golden Gate", "London"];
 
-function logWithIdx(string, idx) {
-  console.log(string, "is at index", idx);
-}
+// function logWithIdx(string, idx) {
+//   console.log(string, "is at index", idx);
+// }
 
-bridges.forEach(logWithIdx);
+// bridges.forEach(logWithIdx);
 //returns:
 // Brooklyn is at index 0
 // Golden Gate is at index 1
